@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="theme">#232323</color>
+    <color name="lightturquoise">#8699FF</color>
+    <color name="turquoise">#91A2FE</color>
+    <color name="darkgal">#7897F4</color>
+    <color name="darkturquoise">#8FA0FF</color>
+    <color name="bluetheme">#6B74F4</color>
+    <color name="cardview">#94ABFD</color>
+    <color name="blue">#85B4FF</color>
+    <color name="lightblue">#78A8F4</color>
+    <color name="superlightblue">#C5DCFF</color>
+    <color name="buttonbg">#8EB3FD</color>
+    <color name="buttonbgstroke">#85AEFF</color>
+    <color name="pink">#F68484</color>
+    <color name="diu">#FF97EFFF</color>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/iconapp4"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iconapp4"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Testing"
+        tools:targetApi="31">
+        <activity
+            android:name=".MethodDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrackDrinkingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodListAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".TrackEatingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FragProfile"
+            android:exported="false" />
+        <activity
+            android:name=".FragMethod"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryFragment"
+            android:exported="false" />
+        <activity
+            android:name=".FragDiary"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CaloriesCaculator"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

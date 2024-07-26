@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TrackDrinkingActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/darkgal">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:background="@color/darkgal"
+            android:drawableRight="@drawable/baseline_arrow_back_24"
+            android:gravity="left"
+            android:text="."
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="."
+            android:drawableLeft="@drawable/baseline_replay_circle_filled_24" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvWaterConsumed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 ml"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"/>
+
+    <TextView
+        android:id="@+id/tvGoalWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/2500 ml"
+        android:textSize="20sp"
+        android:layout_below="@id/tvWaterConsumed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressBarWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorSize="200dp"
+        app:indicatorInset="16dp"
+        app:trackThickness="15dp"
+        app:indicatorColor="#69A4FF"
+        app:trackColor="#C9DEFF"
+        app:indicatorDirectionCircular="clockwise"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/progressBarWater"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnAdd100ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+100ml"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:id="@+id/btnAdd200ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+200ml"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:id="@+id/btnAdd300ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+300ml"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:id="@+id/btnAdd400ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+400ml"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:id="@+id/btnAdd500ml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+500ml"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

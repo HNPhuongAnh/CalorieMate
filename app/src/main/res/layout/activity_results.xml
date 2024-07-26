@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/baseline_check_circle_24" />
+
+    <TextView
+        android:id="@+id/txtTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên: "
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/darkturquoise"/>
+
+    <TextView
+        android:id="@+id/txtCanNangHienTai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cân nặng hiện tại: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtCanNangMucTieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cân nặng mục tiêu: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtCaloriesMucTieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories mục tiêu: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtNgayDatMucTieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày đạt được mục tiêu: "
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDifficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioEasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Mức dễ: giảm 220 calories/ngày" />
+
+        <RadioButton
+            android:id="@+id/radioMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Mức vừa: giảm 550 calories/ngày" />
+
+        <RadioButton
+            android:id="@+id/radioHard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Mức khó: giảm 820 calories/ngày" />
+
+        <RadioButton
+            android:id="@+id/radioVeryHard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Mức cực khó: giảm 990 calories/ngày" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonHoanTat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hoàn tất" />
+</LinearLayout>

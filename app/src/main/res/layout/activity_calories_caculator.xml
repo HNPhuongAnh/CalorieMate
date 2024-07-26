@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CaloriesCaculator">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <Button
+            android:id="@+id/btnBoQua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bỏ qua"
+            android:layout_gravity="end"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#93ABFD"
+            android:layout_marginTop="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="@drawable/cardview_background">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xin chào!"
+                android:textSize="50sp"
+                android:textColor="#8FA6FD"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="315dp"
+                android:layout_height="243dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/complete_profile" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hãy hoàn thành một số thông tin cơ bản để khởi đầu hành trình của bạn"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/edtTen"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/cardview_background"
+                android:inputType="text"
+                android:layout_marginTop="20dp"
+                android:padding="18sp"
+                android:hint="Tên của bạn"
+                android:gravity="start|center_vertical"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text=" Giới tính:"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btnNam"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"
+                    android:textSize="18sp"
+                    android:textColor="#49454F"/>
+
+                <RadioButton
+                    android:id="@+id/btnNu"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ"
+                    android:textColor="#49454F"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text=" Mức độ vận động của bạn:"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/btnItVanDong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ít hoặc không vận động"
+                    android:textSize="18sp"
+                    android:textColor="#49454F"/>
+
+                <RadioButton
+                    android:id="@+id/btnVanDongNhe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vận động nhẹ nhàng"
+                    android:textSize="18sp"
+                    android:textColor="#49454F"/>
+
+                <RadioButton
+                    android:id="@+id/btnVanDongVua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vận động vừa phải"
+                    android:textSize="18sp"
+                    android:textColor="#49454F"/>
+
+                <RadioButton
+                    android:id="@+id/btnVanDongNhieu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vận động rất nhiều"
+                    android:textSize="18sp"
+                    android:textColor="#49454F"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edtTuoi"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cardview_background"
+                android:gravity="start|center_vertical"
+                android:hint="Tuổi của bạn"
+                android:inputType="number"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/edtChieuCao"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cardview_background"
+                android:gravity="start|center_vertical"
+                android:hint="Chiều cao của bạn"
+                android:inputType="number"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/edtCanNang"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cardview_background"
+                android:gravity="start|center_vertical"
+                android:hint="Cân nặng của bạn"
+                android:inputType="number"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/edtCanNangMucTieu"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cardview_background"
+                android:gravity="start|center_vertical"
+                android:hint="Mục tiêu cân nặng của bạn"
+                android:inputType="number"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/btnHoanThanh"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Hoàn thành"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

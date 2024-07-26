@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FragDiary">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/thumbfragdiary" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Chào mừng đến với CalorieMate!"
+            android:textAlignment="center"
+            android:textColor="@color/darkgal"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hãy bắt đầu ngày mới bằng cách lưu lại nhật kí ăn uống của mình cùng CalorieMate!"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnAn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:text="Theo dõi chế độ ăn"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/buttonbg"
+            android:drawableLeft="@drawable/baseline_flatware_24"/>
+
+        <Button
+            android:id="@+id/btnUong"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/buttonbg"
+            android:text="Theo dõi quá trình uống nước"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/baseline_local_drink_24"/>
+
+<!--        <Button-->
+<!--            android:id="@+id/btnTap"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/button_background"-->
+<!--            android:text="Tập"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:textColor="@color/black"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnTheoDoi"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/button_background"-->
+<!--            android:text="Theo dõi"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:textColor="@color/black"/>-->
+
+    </LinearLayout>
+</FrameLayout>

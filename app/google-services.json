@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "298617272343",
+    "firebase_url": "https://doan3-e4046-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "doan3-e4046",
+    "storage_bucket": "doan3-e4046.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298617272343:android:806936f7896070959b8452",
+        "android_client_info": {
+          "package_name": "com.testing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298617272343-d8bt9m3npufoq615nrk0nqcjbmsp8ni5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.testing",
+            "certificate_hash": "f0d06900e362fdae47f1d3f94fab7b96b0d87796"
+          }
+        },
+        {
+          "client_id": "298617272343-kj8k6oagrmch114ma89a9aadlknl9fet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj3-hb-umWX3RP_q5u4NZDbH9Q5O5Td4E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298617272343-kj8k6oagrmch114ma89a9aadlknl9fet.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

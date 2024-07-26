@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignIn">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CalorieMate xin chào!"
+        android:textAlignment="center"
+        android:textColor="#76A3FB"
+        android:layout_marginTop="40dp"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CalorieMate rất vui vì được chọn làm người bạn đồng hành trong quá trình cải thiện bản thân của bạn! \n Hãy bắt đầu hành trình mới ngay nào!"
+        android:textAlignment="center"
+        android:textColor="#FA7DABFB"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="363dp"
+        app:srcCompat="@drawable/signin"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#C5DCFF"
+        android:drawableLeft="@drawable/icon_gg"
+        android:text="Đăng nhập với Google"
+        android:textColor="@color/black" />
+</LinearLayout>
